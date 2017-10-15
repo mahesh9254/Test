@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Services.Entities
 {
-   public class User
+    public class User
     {
         public string UserID { get; set; }
         public string Password { get; set; }
@@ -23,7 +23,7 @@ namespace Services.Entities
             {
                 UserID = this.UserID,
                 Password = this.Password,
-                Button_Label =this.Button_Label,
+                Button_Label = this.Button_Label,
                 LinkPath = this.LinkPath,
                 PageTitle = this.PageTitle,
                 TagName = this.TagName,
