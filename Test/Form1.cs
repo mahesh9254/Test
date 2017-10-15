@@ -160,6 +160,10 @@ namespace Test
                                 testUserControls1.xmldataGridView.Rows[i].Cells[j].ReadOnly = true;
                             }
                         }
+                        else
+                        {
+                            testUserControls1.xmldataGridView.Rows[i].Cells[0].ReadOnly = true;
+                        }
                     }
 
                 }

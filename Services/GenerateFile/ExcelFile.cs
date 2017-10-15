@@ -18,6 +18,7 @@ namespace Services.Excel
             {
                 await Task.Delay(20000);
                 excelFile = new Microsoft.Office.Interop.Excel.Application();
+                excelFile.DisplayAlerts = false;
                 if (excelFile == null)
                 {
                     return "fail";
@@ -39,8 +40,7 @@ namespace Services.Excel
                     i++;
 
                 }
-                Random random = new Random();
-                _excelName = _excelName + random.Next(0, 500).ToString();
+                Random random = new Random();             
                 xlWorkBook.SaveAs(_excelName);
                 xlWorkBook.Close();
                 excelFile.Quit();
